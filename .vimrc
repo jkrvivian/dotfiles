@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/neocomplcache'
 Plug 'scrooloose/nerdtree'
+Plug 'Yggdroot/indentLine'
 map <F5> :NERDTreeToggle<CR>
 
 call plug#end()
@@ -11,6 +12,8 @@ let g:neocomplcache_enable_smart_case = 1
 inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 inoremap <expr><TAB> pumvisible()?"\<C-n>" : "\<TAB>"
 let g:NERDTreeWinSize=20
+
+let g:indentLine_color_term = 245 
 
 syntax on
 set number
