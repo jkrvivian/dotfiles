@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os, json, re, lz4.block
 
 def test_history_path():
