@@ -1,4 +1,5 @@
 alias open='xdg-open'
+alias docker='sudo docker'
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -118,3 +119,4 @@ fi
 
 # added by Anaconda3 installer
 export PATH="/home/jkrvivian/anaconda3/bin:$PATH"
+export opentabs=$(ls -t ~/.mozilla/firefox*/*/sessionstore-backups/recovery.jsonlz4 | sed q)
